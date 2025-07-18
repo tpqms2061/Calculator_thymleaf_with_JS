@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>🧮 Awesome Calculator</title>
+  <link rel="stylesheet" th:href="@{/styles.css}" />
+</head>
+<body>
+<div class="calculator-container">
+  <div id="display">0</div>
+  <div class="calculator-grid">
+    <button class="btn function" data-action="clear">C</button>
+<!--    data-action : 데이터 속성을 뜻함-->
+    <button class="btn function" data-action="divide">÷</button>
+    <button class="btn function" data-action="multiply">×</button>
+    <button class="btn function" data-action="subtract">−</button>
+
+    <button class="btn digit" data-digit="7">7</button>
+    <button class="btn digit" data-digit="8">8</button>
+    <button class="btn digit" data-digit="9">9</button>
+    <button class="btn function" data-action="add">+</button>
+
+    <button class="btn digit" data-digit="4">4</button>
+    <button class="btn digit" data-digit="5">5</button>
+    <button class="btn digit" data-digit="6">6</button>
+    <button class="btn" data-action="equals" rowspan="2">=</button>
+
+    <button class="btn digit" data-digit="1">1</button>
+    <button class="btn digit" data-digit="2">2</button>
+    <button class="btn digit" data-digit="3">3</button>
+
+    <button class="btn digit zero" data-digit="0">0</button>
+    <button class="btn digit" data-digit=".">.</button>
+
+
+  </div>
+
+</div>
+<script th:src="@{/main.js}"></script>
+</body>
+</html>
